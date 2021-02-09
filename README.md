@@ -30,6 +30,6 @@ WantedBy=multi-user.target
 ## Acknowledgments
 
 Many thanks to mqtt-async-client and influx_db_client crates creators for his invaluable work!
-https://crates.io/crates/influx_db_client
-https://crates.io/crates/mqtt-async-client
+(https://crates.io/crates/influx_db_client)
+(https://crates.io/crates/mqtt-async-client)
 
