@@ -12,6 +12,22 @@ I tested it on x86 linux and ARM7 (raspberry 3 & 4)
 You need to put the configuration file asided the binary file. It should be called mqtt2influxdb.toml.
 Sample configuration file included.
 
+## Sample /lib/systemd/system/mqtt2influxdb.service file
+
+'''
+[Unit]
+Description=MQTT to InfluxDB forwarder
+After=multi-user.target
+
+[Service]
+ExecStart=/home/dietpi/mqtt2influxdb/mqtt2influxdb
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
+'''
+
 ## Acknowledgments
 
 Many thanks to mqtt-async-client and influx_db_client crates creators for his invaluable work!
