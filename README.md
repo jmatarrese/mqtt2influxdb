@@ -12,4 +12,9 @@ I tested it on x86 linux and ARM7 (raspberry 3 & 4)
 You need to put the configuration file asided the binary file. It should be called mqtt2influxdb.toml.
 Sample configuration file included.
 
+## Acknowledgments
+
+Many thanks to mqtt-async-client and influx_db_client crates creators for his invaluable work!
+https://crates.io/crates/influx_db_client
+https://crates.io/crates/mqtt-async-client
 
