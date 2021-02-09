@@ -14,7 +14,7 @@ Sample configuration file included.
 
 ## Sample /lib/systemd/system/mqtt2influxdb.service file
 
-'''
+```
 [Unit]
 Description=MQTT to InfluxDB forwarder
 After=multi-user.target
@@ -26,8 +26,7 @@ RestartSec=10s
 
 [Install]
 WantedBy=multi-user.target
-'''
-
+```
 ## Acknowledgments
 
 Many thanks to mqtt-async-client and influx_db_client crates creators for his invaluable work!
