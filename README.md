@@ -1,0 +1,15 @@
+# mqtt2influxdb
+MQTT to InfluxDB forwarder in Rust
+
+## Description
+
+This console app could be configured to work as a service.
+It subscribes to specified MQTT topics and insert time series events into InfluxDB 
+I tested it on x86 linux and ARM7 (raspberry 3 & 4)
+
+## Configuration file
+
+You need to put the configuration file asided the binary file. It should be called mqtt2influxdb.toml.
+Sample configuration file included.
+
+
