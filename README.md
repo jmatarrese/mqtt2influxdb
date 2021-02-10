@@ -20,6 +20,7 @@ Description=MQTT to InfluxDB forwarder
 After=multi-user.target
 
 [Service]
+WorkingDirectory=/home/dietpi/mqtt2influxdb
 ExecStart=/home/dietpi/mqtt2influxdb/mqtt2influxdb
 Restart=always
 RestartSec=10s
@@ -27,9 +28,12 @@ RestartSec=10s
 [Install]
 WantedBy=multi-user.target
 ```
+
 ## Acknowledgments
 
 Many thanks to mqtt-async-client and influx_db_client crates creators for his invaluable work!
+
 [influx_db_client crate](https://crates.io/crates/influx_db_client)
+
 [mqtt-async-client crate](https://crates.io/crates/mqtt-async-client)
 
