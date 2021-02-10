@@ -1,4 +1,4 @@
-db_url = "httpw://192.168.0.200:8086"
+db_url = "http://192.168.0.200:8086"
 db_name = "mqtt2influxdb"
 db_user = "root"
 db_password = "root"
